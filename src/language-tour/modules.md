@@ -25,6 +25,37 @@ import MyModule.{some_value, MyType(..)}
 
 You can import nested modules using the `import My/Nested/Module` syntax
 
+<!-- TODO "as" renaming -->
+
 <!-- TODO prelude -->
 
 <!-- TODO moduledoc -->
+
+## Visibility
+
+Both values and types are module-private by default. You can use the `pub` modifier to make them visible from other modules:
+
+```kestrel
+pub let my_value = // ..
+
+pub type MyAlias = // ..
+
+pub enum MyEnum {
+  // ..
+}
+
+pub struct MyStruct {
+  // ..
+}
+```
+
+In the case of `enum`s and `struct`s, just using `pub` will not expose the underlying implementation (the fields or the costructors). You can expose that using the `pub(..)` visibility:
+
+```kestrel
+pub(..) enum MyEnum {
+  // ..
+}
+pub(..) struct MyStruct {
+  // ..
+}
+```

@@ -30,14 +30,6 @@ You can optionally write explicit types for global let bindings:
 let take_first = fn a, b { a }
 ```
 
-## Visibility
-
-Let bindings are private by default. You can make them visible from the outside by using the `pub` modifier:
-
-```kestrel
-pub let my_value = // ..
-```
-
 ## Local bindings
 
 You can introduce (immutable) local bindings by creating a block using `{}`.

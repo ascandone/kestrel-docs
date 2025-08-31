@@ -13,13 +13,3 @@ Type aliases can have type parameters as well:
 ```kestrel
 type MyResult<a> = Result<a, MyError>
 ```
-
-## Visibility
-
-Type aliases are private by default. You can make them public using the `pub` modifier:
-
-```kestrel
-pub type MyAlias = // ..
-```
-
-You can't use a `pub(..)` modifier, as aliases are nominal, therefore implicitly exposed.

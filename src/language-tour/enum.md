@@ -31,24 +31,6 @@ enum Box<a> {
 }
 ```
 
-## Visibility
-
-By default, union types are only visible within the current module. You can use the `pub` modifier to make them public:
-
-```kestrel
-// Makes the type visible from other modules, but not the constructors
-pub enum MyType {
-  // ..
-}
-
-// Makes both the type and the constructors visible
-pub(..) enum MyType {
-  // ..
-}
-```
-
-> Note: using the `pub(..)` modifier will cause breaking changes when modifying any constructor, or when adding or removing one. You may consider making you type opaque and exposing constructors by aliasing them with values, e.g. `pub let my_ctor = MyCtor`
-
 ## Notable types
 
 There are a few types that are implemented as enums in the standard library instead of being built-in:

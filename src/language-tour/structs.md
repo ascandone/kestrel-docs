@@ -72,19 +72,3 @@ let p = Person {
   // ..
 }
 ```
-
-## Visibility
-
-Structs are private by default. You can use the `pub` modifier to make them visibile from the outside:
-
-```kestrel
-// Make the `St` type visible on the outside - but not the fields.
-pub struct St {
-  // ..
-}
-
-// Make both the type and the fields visible on the outside
-pub(..) struct St {
-  // ..
-}
-```
