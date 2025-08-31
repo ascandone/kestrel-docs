@@ -1,6 +1,7 @@
 # Summary
 
 - [Language tour](./language-tour/README.md)
+
   - [Basic datatypes](./language-tour/basic-datatypes.md)
   - [Types](./language-tour/types.md)
   - [Functions](./language-tour/functions.md)
@@ -15,6 +16,13 @@
   - [Modules](./language-tour/modules.md)
   - [Pipes](./language-tour/pipes.md)
   - [Let#](./language-tour/let-hash.md)
+
+- [Create a project](./project/README.md)
+  - [Hello world](./project/hello-world.md)
+  - [Create a library]()
+  - [Testing]()
+  - [Managing dependencies]()
+  - [Interop]()
 
 <!-- TODO kestrel vs js, elm -->
 
