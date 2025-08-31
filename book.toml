@@ -1,0 +1,9 @@
+[book]
+authors = ["ascandone"]
+language = "en"
+src = "src"
+title = "Kestrel Docs"
+
+
+[output.html]
+additional-js = ["theme/kestrel-highlight.js"]
