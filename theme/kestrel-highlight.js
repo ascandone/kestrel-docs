@@ -3,7 +3,8 @@
 hljs.registerLanguage("kestrel", (hljs) => {
   const KEYWORDS = {
     className: "keyword",
-    beginKeywords: "match if else fn let pub type struct enum import",
+    beginKeywords:
+      "match if else fn let pub type struct enum import impl for where trait",
   };
   const STRING = {
     className: "string",

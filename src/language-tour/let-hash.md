@@ -53,8 +53,8 @@ This results in lots of `Result.and_then` chained call.
 You can simplify this using `let#`:
 
 ```kestrel
-let get_some_number: Fn(String) -> Result<Int, String>
-let get_data_by_id: Fn(Int) -> Result<MyData, String>
+let get_some_number: (String) -> Result<Int, String>
+let get_data_by_id: (Int) -> Result<MyData, String>
 
 // Inferred as `Result<MyData, String>`
 let get_data = {
